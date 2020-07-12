@@ -1,8 +1,9 @@
 Hello, welcome to this bot announcing new pairs created on UniSwap v2 to list new tokens.
 Block Number is: {{ .Block.Number }}
 Block Timestamp is: {{ humanTime .Block.Timestamp }}
-Block Hash is: {{ etherscanTxLink .Block.Hash }}
+Transaction Hash is: {{ etherscanTxLink .Tx.Hash }}
 Contract Address is: {{ etherscanAddressLink .Contract.Address }}
 Event name is {{ .Contract.EventName }}
 Event token0 param is: {{ etherscanTokenLink .Contract.EventParameters.token0 }}
 Event token1 param is: {{ etherscanTokenLink .Contract.EventParameters.token1 }}
+Good luck to buy them.
